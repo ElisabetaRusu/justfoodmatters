@@ -71,9 +71,9 @@ export default function RecipeDetails({ recipe }) {
           text-transform: uppercase;
         }
         .banner h2 {
-          width: fit-content;
           margin: 0;
           background: #fff;
+          display: inline-block;
           padding: 20px;
           position: relative;
           top: -60px;
