@@ -73,11 +73,10 @@ export default function RecipeDetails({ recipe }) {
         .banner h2 {
           margin: 0;
           background: #fff;
-          display: inline-block;
+          width: fit-content;
           padding: 20px;
           position: relative;
-          top: -60px;
-          left: -10px;
+          top: -40px;
           transform: rotateZ(-1deg);
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
         }
