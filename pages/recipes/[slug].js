@@ -31,6 +31,15 @@ export const getStaticProps = async ({ params }) => {
     'fields.slug': params.slug
   })
 
+  if (!items.length) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false
+      }
+    }
+  }
+
   return {
     props: { recipe: items[0] },
     revalidate: 1
@@ -59,7 +68,7 @@ export default function RecipeDetails({ recipe }) {
         <h3>Ingredients:</h3>
 
         {ingredients.map(ing => (
-          <span key={ing}>{ ing }</span>
+          <li key={ing}>{ ing }</li>
         ))}
       </div>
         
