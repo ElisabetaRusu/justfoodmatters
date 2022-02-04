@@ -26,6 +26,8 @@ export default function RecipeCard({ recipe }) {
       <style jsx>{`
         .card {
           transform: rotateZ(-1deg);
+          display: grid;
+          justify-content: center;
         }
         .content {
           background: #fff;
